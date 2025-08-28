@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import ProductListing from "./pages/ProductListing";
 import ShoppingCart from "./pages/ShoppingCart";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <Router basename="/paradise-nursery-new">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductListing />} />
